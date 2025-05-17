@@ -4,11 +4,11 @@ from handlers import register_handlers
 import os
 
 # Замените на ваши данные
-api_id = 'YOUR_API_ID'
-api_hash = 'YOUR_API_HASH'
-phone_number_1 = 'YOUR_PHONE_NUMBER_1'
-phone_number_2 = 'YOUR_PHONE_NUMBER_2'
-bot_token = 'YOUR_BOT_TOKEN'
+api_id = '11423218'
+api_hash = '1f7f272aaf03ff0caf14feec06848321'
+phone_number_1 = '+56978389470'
+phone_number_2 = '+18048411440'
+bot_token = '7748397448:AAFu8TXv4aEoimRHdv--St7a0qesoDtTaCk'
 
 # Инициализация клиентов
 client_1 = TelegramClient(phone_number_1, api_id, api_hash)
