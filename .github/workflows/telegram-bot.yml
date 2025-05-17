@@ -3,6 +3,11 @@ name: Run Bot
 on:
   push:
   workflow_dispatch:
+    inputs:
+      python-version:
+        description: 'Python version'
+        required: false
+        default: '3.10'
 
 jobs:
   deploy:
@@ -13,7 +18,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.10
+          python-version: ${{ github.event.inputs.python-version || '3.10' }}
 
       - name: Install dependencies
         run: pip install -r requirements.txt
